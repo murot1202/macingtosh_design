@@ -1,0 +1,111 @@
+@import 'fonts.css';
+
+/* ROOT start */
+
+:root {
+    --f500: 'Montserrat-Medium';
+    --f600: 'Montserrat-Thin';
+    --m400: 'MyriadPro-Regular';
+    --n400: 'NunitoSans-Regular';
+    --n700: 'NunitoSans-Bold';
+    --w400: 'WorkSans-Regular';
+    --stroke: 'stroke';
+    --text-about: #191919;
+    --text-info: #787878;
+    --green: #0a411f;
+    --dark: #141414;
+    --message: #f5f5f5;
+    --header-nav: #e3e4ea;
+    --background-green: #007d2f;
+    --green_85: rgb(55, 137, 86, 0.85);
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+  font-family: var(--f500);
+}
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* ROOT end */
+
+/* HEADER start */
+
+.header-work__nav {
+    margin: 18px 0;
+}
+.header__left-work {
+    background: var(--message);
+    padding: 105px 0 0;
+}
+.header-work__title {
+    font-family: var(--m400);
+    font-size: 38px;
+    color: #171717;
+    line-height: 37px;
+}
+.header-work__text {
+    line-height: 24px;
+    font-family: var(--n400);
+    color: var(--text-info);
+}
+
+.header-left__info-work{
+    padding: 0 0 0 135px;
+}
+.header-left__title-work {
+    color: #171717;
+    font-size: 38px;
+    line-height: 37px;
+}
+.header-left__text-work {
+    color: var(--text-info);
+    font-family: var(--n400);
+    line-height: 24px;
+    margin-top: 33px;
+}
+.left-text {
+    margin-bottom: 74px;
+}
+.left-span {
+    margin-top: -14px;
+}
+.left-span span {
+    color: #171717;
+    font-family: var(--n700);
+}
+.header__right-work {
+    object-fit: cover;
+}
+
+/* HEADER end */
+/* ************************** */
+/* FOOTER start */
+
+.footer__macingtosh {
+    margin-top: 0 !important;
+}
+
+/* FOOTER end */
+/* ************************************* */
+/* MEDIA start */
+@media (max-width: 991px) {
+    .header__left-work {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding-top: 70px;
+    }
+}
+@media (max-width: 757px) {
+    .header__right-work {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .header-left__title-work {
+        font-size: 28px;
+        line-height: 27px;
+    }
+}

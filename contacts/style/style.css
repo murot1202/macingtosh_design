@@ -1,0 +1,90 @@
+@import 'fonts.css';
+
+/* ROOT start */
+
+:root {
+    --f500: 'Montserrat-Medium';
+    --f600: 'Montserrat-Thin';
+    --m400: 'MyriadPro-Regular';
+    --n400: 'NunitoSans-Regular';
+    --n700: 'NunitoSans-Bold';
+    --w400: 'WorkSans-Regular';
+    --stroke: 'stroke';
+    --text-about: #191919;
+    --text-info: #787878;
+    --green: #0a411f;
+    --dark: #141414;
+    --message: #f5f5f5;
+    --header-nav: #e3e4ea;
+    --background-green: #007d2f;
+    --green_85: rgb(55, 137, 86, 0.85);
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+  font-family: var(--f500);
+}
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* ROOT end */
+/* *********************** */
+/* HEADER start */
+
+header {
+    margin: 17px 0;
+}
+.dropdown-menu {
+    transform: translate3d(-140px, 20px, 0px) !important;
+    background: #171717;
+}
+.dropdown-menu a {
+    color: #ffffff;
+}
+.dropdown-menu a:hover {
+    color: var(--text-info);
+    background: #171717;
+}
+
+/* HEADER end */
+/* *********************** */
+/* MAIN start */
+main {
+    background: var(--message);
+    padding: 99px;
+}
+.main__info-contacts {
+    margin-bottom: 100px;
+}
+.left-span {
+    margin-top: 25px;
+    color: var(--text-info);
+}
+.left-span span {
+    color: #171717;
+    font-family: var(--n700);
+}
+.main-info__title-contacts {
+    font-size: 30px;
+    color: #171717;
+    line-height: 22px;
+    margin-bottom: 42px;
+}
+.main-info__text-contacts {
+    color: var(--text-info);
+    font-family: var(--n400);
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.main__img-contacs {
+    object-fit: cover;
+}
+
+/* MAIN end */
+/* *********************** */
+/* FOOTER start */
+footer {
+    margin-top: -100px;
+}
